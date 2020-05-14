@@ -1,3 +1,5 @@
+
+
 package com.company;
 
 public class Word {
@@ -9,7 +11,7 @@ public class Word {
 
     public boolean hasConsecutiveDuplicates() {
         for (int i = 0; i < tiles.length-1; i++) {
-            if (tiles[i].getLetter() == tiles[i+1].getLetter()) {
+            if (tiles[i].getLetter().equals(tiles[i+1].getLetter())) {
                 return true;
             }
         }
